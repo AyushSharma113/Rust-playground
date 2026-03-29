@@ -20,7 +20,7 @@ fn main(){
 
     let secret = rand::thread_rng().gen_range(1..=10);
     loop {
-        println!("Guess kar bhadwa:");
+        println!("G+uess kar bhadwa:");
 
         let mut guess = String::new();
 
