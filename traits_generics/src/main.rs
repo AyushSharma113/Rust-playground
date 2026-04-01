@@ -19,8 +19,3 @@ impl Speak for Cat {
 }
 
 
-fn make_speak(item: &impl Speak){
-
-}
-
-
