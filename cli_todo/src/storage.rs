@@ -16,9 +16,8 @@ pub fn load_todos() -> Vec<Todo>{
         Err(_) => vec![],
     }
 }
+
 // .unwrap_or() method call. You are passing the empty vector vec![] as an argument to that method. It’s saying: "Give me the parsed data, or if that's not possible, use this empty list as the fallback."
-
-
 
 pub fn save_todos(todos: &Vec<Todo>){
     let json = serde_json::to_string_pretty(todos).unwrap(); // Result<String, Error>
@@ -28,5 +27,3 @@ pub fn save_todos(todos: &Vec<Todo>){
     //  converts the json string into raw bytes and writes them to the disk
     file.write_all(json.as_bytes()).unwrap(); 
 }
-
-
