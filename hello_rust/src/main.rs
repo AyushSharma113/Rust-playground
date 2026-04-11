@@ -1,4 +1,4 @@
 fn main() {
-    println!("The number is {} {}", 42);
+    println!("i am just testing is {} {}", 42);
 }
 
